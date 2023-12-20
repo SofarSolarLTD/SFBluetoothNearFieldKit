@@ -17,15 +17,14 @@ Pod::Spec.new do |spec|
 
   spec.name         = "SFBluetoothNearFieldKit"
   spec.version      = "1.0.0"
-  spec.summary      = "首航蓝牙近场控制framework"
+  spec.summary      = "首航新能源蓝牙近场控制framework"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+  spec.description  = "首航新能源蓝牙近场控制framework"
 
   spec.homepage     = "https://github.com/SofarSolarLTD/SFBluetoothNearFieldKit"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -38,8 +37,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
+  # spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +89,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.resources  = "BundleResource/*.{bundle}"
-  spec.source_files  = "SourceFramework/*.{framework}"
+  spec.resources  = "SourceFramework/*.{framework}"
+  #spec.source_files  = "SourceFramework/*.{framework}"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
