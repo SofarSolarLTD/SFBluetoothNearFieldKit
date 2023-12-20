@@ -89,11 +89,13 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.resources  = "SourceFramework/*.{framework}"
+  #spec.resources  = "SourceFramework/*.{framework}"
   #spec.source_files  = "SourceFramework/*.{framework}"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
+
+  spec.vendored_frameworks = "SourceFramework/SFBluetoothNearFieldKit.framework"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -130,6 +132,8 @@ Pod::Spec.new do |spec|
   #  you can include multiple dependencies to ensure it works.
 
   spec.requires_arc = true
+
+  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'armv7 arm64' }
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency "JSONModel", "~> 1.8.0"
