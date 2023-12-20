@@ -1,0 +1,6 @@
+framework module SFBluetoothNearFieldKit {
+  umbrella header "SFBluetoothNearFieldKit.h"
+
+  export *
+  module * { export * }
+}
