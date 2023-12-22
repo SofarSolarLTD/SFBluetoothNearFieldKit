@@ -95,7 +95,7 @@ Pod::Spec.new do |spec|
 
   # spec.public_header_files = "Classes/**/*.h"
 
-  spec.vendored_frameworks = "SourceFramework/SFBluetoothNearFieldKit.framework"
+  spec.vendored_frameworks = "SFBluetoothNearFieldKit.framework"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -107,7 +107,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
+  spec.resources = "SFBundle.bundle"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
