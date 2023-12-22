@@ -56,18 +56,32 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSInteger)getCurrentState;
 
 #pragma mark --- 蓝牙近场功能相关接口
+
+/**
+注册监听通知
+  -notifyName: 数据结果集通知名称
+ */
+- (void)registerNotifyWithName:(NSString *)notifyName;
+
 /// 通用读写以及功能方法
 /// - Parameters:
 ///   - params: 入参，参考MQTT2.0协议文档
 ///   - complete: 通用读写数据回调
-- (void)command:(NSDictionary *)params complete:(void(^)(id data))complete;
-
+- (void)command:(NSDictionary *)params;
 
 /// 固件升级
 /// - Parameters:
 ///   - params: 入参，参考MQTT2.0协议文档
 ///   - complete: 固件升级数据回调
-- (void)upgrade:(NSDictionary *)params complete:(void(^)(id data))complete;
+- (void)upgrade:(NSDictionary *)params;
+
+/**当前是否处于固件升级中**/
+- (BOOL)currentIsUpgrading;
+
+/**停止固件升级查询升级进度**/
+- (void)stopUpgradeProgressNotify;
+
+
 
 @end
 
