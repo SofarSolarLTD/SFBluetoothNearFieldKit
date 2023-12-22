@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SFBluetoothNearFieldKit"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "首航新能源蓝牙近场控制framework"
 
   # This description is used to generate tags and improve search results.
