@@ -139,7 +139,7 @@ Pod::Spec.new do |spec|
   #spec.dependency "JSONModel", "~> 1.8.0"
   #spec.dependency "FMDB", "~> 2.7.5"
   #spec.dependency "DateTools", "~> 2.0.0"
-  spec.dependency "JSONModel", 
-  spec.dependency "FMDB",
-  spec.dependency "DateTools",
+  spec.dependency "JSONModel"
+  spec.dependency "FMDB"
+  spec.dependency "DateTools"
 end
